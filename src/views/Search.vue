@@ -14,7 +14,7 @@
             <input v-model="latitude" placeholder="Latitude" class="form-control rounded">
             <input v-model="longitude" placeholder="Longitude" class="form-control rounded">
             <div class="input-group-append">
-                <button @click="searchWeather" class="btn btn-primary">ค้นหา</button>
+                <button @click="searchWeather" class="btn btn-dark rounded-pill px-3" type="button">ค้นหา</button>
             </div>
         </div>
     </div>
