@@ -4,7 +4,7 @@ import { ref, onMounted } from "vue";
 import { RouterLink } from 'vue-router';
 
 const items = ref([]);
-const url = "https://api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&appid=264f08ebe173d6c08b7e05d256f9b714";
+const url = "https://api.openweathermap.org/data/2.5/forecast?lat=37.731376&lon=-122.397935&appid=264f08ebe173d6c08b7e05d256f9b714";
 
 function WeatherData() {
   axios
@@ -74,6 +74,7 @@ const weatherImages = {
       </h3>
     </router-link>
   </header>
+  <div class="headweather" style="margin-top: 20px;">พยากรณ์อากาศ 5 วัน ของ Sanfrancisco</div>
   <div class="container">
     <div class="weather" v-for="(item, index) in items" :key="index">
       <div class="card" style="width: 15rem;">
@@ -108,6 +109,16 @@ header {
 .card-img-top {
   max-width: 100%;
   height: auto;
+}
+.headweather {
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: #1B2631;
+  width: 50%;
+  margin: 0 auto;
 }
 .container {
   display: grid;

@@ -92,6 +92,7 @@ header {
     margin-right: 10px;
 }
 .weather-results {
-    margin: 20px;
-}</style>
+    margin: 20px ;
+}
+</style>
   
